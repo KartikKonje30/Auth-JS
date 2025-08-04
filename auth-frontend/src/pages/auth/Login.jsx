@@ -2,7 +2,6 @@
 import { SiAuthy } from "react-icons/si";
 import { Button, Checkbox, Label} from "flowbite-react";
 import CommonInput from "../../components/common/CommonInput";
-import CommonPassword from "../../components/common/CommonPassword";
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {
@@ -23,7 +22,7 @@ const LoginPage = () => {
       <CommonInput type="email" name="email" placeholder="name@email.com" />
       </div>
       <div className="">
-      <CommonPassword type="password" name="password" placeholder="********" />
+      <CommonInput type="password" name="password" placeholder="********" />
       </div>
       <div className="flex justify-between">   
       <div className="flex items-center gap-2">

@@ -2,8 +2,6 @@
 import { SiAuthy } from "react-icons/si";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import CommonInput from "../../components/common/CommonInput";
-import CommonPassword from "../../components/common/CommonPassword";
-import { Link } from "react-router-dom";
 
 
 const ResetPage = () => {
@@ -20,10 +18,10 @@ const ResetPage = () => {
       </div>
       <form className="flex max-w-md flex-col gap-4 mt-6">
       <div>
-      <CommonPassword type="password" name="password" placeholder="********" />
+      <CommonInput type="password" name="password" placeholder="********" />
       </div>
       <div>
-      <CommonPassword type="confirmPassword" name="Confirm Password" placeholder="********" />
+      <CommonInput type="confirmPassword" name="Confirm Password" placeholder="********" />
       </div>
       <Button type="submit" size="lg">Submit</Button>
     </form>
