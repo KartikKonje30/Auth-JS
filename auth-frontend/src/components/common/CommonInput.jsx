@@ -1,10 +1,10 @@
 import { Label, TextInput } from "flowbite-react";
 
-const CommonInput = ({type, name, placeholder, ...rest}) => {
+const CommonInput = ({type, label, name, placeholder, checkPassword, ...rest}) => {
   return (
     <>
       <div className="mb-2 block">
-        <Label htmlFor={name} className="capitalize">{`${name}`}</Label>
+        <Label htmlFor={name} className="">{label}</Label>
       </div>
       <TextInput
         id={name}
@@ -12,6 +12,7 @@ const CommonInput = ({type, name, placeholder, ...rest}) => {
         name={name}
         placeholder={placeholder}
         sizing="md"
+        color={checkPassword ? 'failure' : 'gray'}
         required
         {...rest}
       />
